@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation App</title>
+</head>
+<body>
+    <link rel = "stylesheet" href = "styles.css"> 
+    <script src = "app.js"> </script>
+     
+    <div class = "meditation_app" id ="player">
+        <div class ="background_video">
+            <video loop>
+                <source src = "./video/Rain Drop Video.mp4" type = "video/mp4"> 
+            </video>
+        </div>
+
+        
+        <div class = "time_selection"> 
+        <button data-time = "300"> 5 Minutes </button>
+        <button data-time ="600"> 10 Minutes</button>
+        <button data-time ="1200"> 20 Minutes </button>
+        <button data-time ="1800"> 30 Minutes </button>
+        <button data-time ="3600"> 1 hour </button>
+           
+    </div>
+        
+    <div class = "song_player"> 
+        
+        <audio class ="meditation_music" >
+        <source  src = "./sounds/Rain Sounds.mp3"/>
+        </audio>
+        <img src = "./jpeg/playbutton2.png" alt = "Does not show" class = "playbutton" id ="play_button"/> 
+       <svg class ="track_outline"
+       width = "500"
+       height = "500"
+       viewBox = "0 0 500 500"
+       fill ="none" >
+    <circle
+    cx = "226.5"
+    cy = "226.5"
+    r  = "216.5"
+    stroke ="white"
+    stroke-width="18"
+    />
+    </svg>
+    <svg class = "moving_outline"
+    width = "500"
+    height = "500"
+    viewBox = "0 0 500 500"
+    fill ="none" 
+    xmLns = ""               >
+ <circle id = "Moving_circle"
+ cx = "226.5"
+ cy = "226.5"
+ r  = "216.5"
+ stroke ="black"
+ stroke-width="18"
+ />
+ </svg>
+ <h3 class = "time_displayer"> 00:00 </h3>
+    </div>
+
+        <div class = "sound_selection">
+            <button data-sound = "./sounds/Rain.mp3"> 
+                <img src = "./jpeg/download.jpg" alt = "rain" class ="rain"  data-video ="./video/Rain Drop Video.mp4">
+           </button>
+
+           <button data-sound = "./sounds/Beach Music.mp3" > 
+                <img src = "./jpeg/Sun.png" alt = "sun" class = "sunpic" data-video="./video/beach.mp4">
+           </button>
+
+
+        </div>       
+
+    </div>
+
+</body>
+</html>
